@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WeddingShop/static/css/main.f140c525.css",
+    "main.js": "/WeddingShop/static/js/main.36061730.js",
+    "static/js/453.4e2e2586.chunk.js": "/WeddingShop/static/js/453.4e2e2586.chunk.js",
+    "index.html": "/WeddingShop/index.html",
+    "main.f140c525.css.map": "/WeddingShop/static/css/main.f140c525.css.map",
+    "main.36061730.js.map": "/WeddingShop/static/js/main.36061730.js.map",
+    "453.4e2e2586.chunk.js.map": "/WeddingShop/static/js/453.4e2e2586.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f140c525.css",
+    "static/js/main.36061730.js"
+  ]
+}
