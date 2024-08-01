@@ -1,0 +1,181 @@
+.Every_Cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+
+
+    .EveryTextArea {
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+
+        h4 {
+            color: #A69494;
+            font-weight: 400;
+        }
+
+        h1 {
+            color: #333333;
+            font-weight: 350;
+            font-size: 47px;
+        }
+
+        p {
+            color: #5c5757;
+        }
+
+        button {
+            padding: 20px 30px;
+            border: none;
+            background-color: #000000;
+            color: white;
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #a69494dc;
+                color: #000000;
+                transition: .4s;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+
+    .EveryImg {
+        width: 480px;
+        height: 350px;
+        /* background-color: red; */
+        position: relative;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.103);
+        background-position: center;
+        border-radius: 10px;
+        background-size: cover;
+        background-image: url(https://banket24.kz/wp-content/uploads/2023/10/photo_2023-08-22_16-37-02-1.jpg);
+
+        &::before {
+            content: '';
+            background-image: url(https://i.pinimg.com/736x/7e/32/c3/7e32c3e343c640e47e9ea741fc99bcbf.jpg);
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50%;
+            box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.329);
+            height: 60%;
+            /* background-color: green; */
+            top: 10%;
+            left: 5%;
+        }
+    }
+}
+@media (min-width:320px) and (max-width:1024px){
+    .Every_Cont{
+        flex-direction: column;
+        gap: 15px;
+        .EveryTextArea{
+            width: 100%;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+
+        .EveryImg{
+            width: 100%;
+            &::before{
+                width: 50%;
+                height: 60%;
+                top: 10%;
+                left: 5%;
+            }
+        }
+    }
+
+}
+/* @media (min-width: 552px) and (max-width:768px){
+    
+    .Every_Cont{
+        flex-direction: column;
+        gap: 15px;
+        
+        .EveryTextArea{
+            width: 100%;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    .EveryImg{
+        width: 100%;
+        height: 200px;
+        &::before{
+            width: 50%;
+            height: 60%;
+            top: 10%;
+            left: 5%;
+        }
+    }
+}
+@media (min-width:320px) and (max-width:552px){
+    
+    .Every_Cont{
+        flex-direction: column;
+        gap: 15px;
+        padding: 100px 10px;
+        
+        .EveryTextArea{
+            width: 100%;
+            h1{
+                font-size: 27px;
+            }
+            h4{
+                font-size: 13px;
+            }
+            p{
+                font-size: 12px;
+            }
+            button{
+                padding: 10px 20px;
+                font-size: 12px;
+            }
+        }
+    }
+    .EveryImg{
+        width: 100%;
+        height: 200px;
+        
+        &::before{
+            width: 40%;
+            height: 50%;
+            top: 10%;
+            left: 5%;
+        }
+    }
+
+} */

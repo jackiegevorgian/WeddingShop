@@ -1,0 +1,175 @@
+.ServProg_Cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 50px 40px;
+
+
+    .ServProg_Img {
+        width: 500px;
+        height: 500px;
+        /* background-color: red; */
+        position: relative;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.103);
+        background-position: center;
+        border-radius: 10px;
+        background-size: cover;
+        background-image: url(https://img.freepik.com/premium-photo/wedding-dress-is-table-room-with-mirror_758367-5687.jpg);
+
+        &::before {
+            content: '';
+            background-image: url(https://weddingblog.ru/wp-content/uploads/2024/02/article_397svadebnye-tufli-nevesty-kak-vybrat-brendy-i-rekomendacii.webp);
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 60%;
+            box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.329);
+            height: 70%;
+            /* background-color: green; */
+            top: 20%;
+            right: -15%;
+        }
+    }
+
+    .ServProg_Box {
+        width: 500px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+
+        .Progress_box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 15px;
+
+            progress {
+                width: 100%;
+                height: 5px;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            progress[value] {
+                -webkit-appearance: none;
+            }
+
+            progress[value]::-webkit-progress-value {
+                background-color: #252525;
+            }
+
+            &>div {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            label{
+                color: #333333;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            span{
+            color: #5c5757;
+            }
+        }
+        h4{
+            color: #A69494;
+            font-weight: 400;
+        }
+        h1{
+            color: #333333;
+            font-weight: 350;
+            font-size: 49px;
+        }
+        p{
+            color: #5c5757;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .ServProg_Cont{
+        flex-direction: column;
+        gap: 15px;
+
+        .ServProg_Img{
+            width: 100%;
+            &::before{
+                width: 40%;
+                height: 80% ;
+                top: 10px;
+                right: 5%;
+            }
+        }
+    }
+}
+@media (min-width: 552px) and (max-width:768px){
+    .ServProg_Cont{
+        flex-direction: column;
+        gap: 15px;
+
+        .ServProg_Img{
+            width: 100%;
+            &::before{
+                width: 45%;
+                height: 80%;
+                top: 0px;
+                right: 0;
+            }
+        }
+        .ServProg_Box{
+            h4{
+                font-size: 13px;
+            }
+            h1{
+                font-size: 37px;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+@media (min-width:320px) and (max-width:552px){
+    .ServProg_Cont{
+        flex-direction: column;
+        gap: 15px;
+
+        .ServProg_Img{
+            width: 100%;
+            height: 250px;
+            &::before{
+                width: 40%;
+                height: 70%;
+                top: 10px;
+                right: 5%;
+            }
+        }
+        .ServProg_Box{
+            width: 100%;
+            h4{
+                font-size: 13px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+
+}

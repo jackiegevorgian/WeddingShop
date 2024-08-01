@@ -1,0 +1,169 @@
+.Register_Cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    background-size: cover;
+    padding: 100px 40px;
+    background-image: url(https://kartinki.pics/uploads/posts/2021-07/thumbs/1626196231_42-kartinkin-com-p-perya-fon-krasivo-45.jpg);
+
+    .Register_Info {
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       gap: 30px;
+       
+        &>div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+      
+      
+
+        h3 {
+            color: #333333;
+            font-size: 35px;
+            font-weight: 400;
+            transition: .7s;
+       
+        }
+        h3:hover{
+            color: #665f5f;
+
+        }
+
+        input {
+            width: 300px;
+            padding: 5px 10px;
+            text-transform: capitalize;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid #333333;
+            color: #333333;
+        }
+
+        button {
+            color: #f8f8f8;
+            background-color: #665f5f;
+            padding: 5px 80px;
+            border: none;
+            transition: .7s;
+        }
+
+        button:hover {
+            background-color: #decdcd;
+
+        }
+    }
+
+    .Find_Us {
+        width: 350px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+
+        h3 {
+            color: #333333;
+            font-size: 35px;
+            font-weight: 400;
+            transition: .7s;
+        }
+        h3:hover{
+            color: #665f5f;
+
+        }
+
+        ul {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10px;
+
+            &>li {
+                overflow: hidden;
+                border-radius: 5px;
+                position: relative;
+                color:  #665f5f;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 90%;
+                    width: 0;
+                    height: 1px;
+                    background-color:  #665f5f;
+                    transition: .4s;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:552px) and (max-width:768px){
+    .Register_Cont{
+        flex-wrap: wrap;
+        .Register_Info{
+            width: 100%;
+           h3{
+            font-size: 30px;
+           }
+           input{
+            width: 300px;
+           }
+           button{
+            padding: 5px 60px;
+           }
+        }
+        .Find_Us{
+            align-items: center;
+            h3{
+                font-size: 30px;
+               }
+    
+        }
+    }
+}
+@media (min-width:320px) and (max-width:552px){
+    .Register_Cont{
+        flex-wrap: wrap;
+        .Register_Info{
+            width: 100%;
+           h3{
+            font-size: 30px;
+           }
+           input{
+            width: 200px;
+           }
+           button{
+            padding: 5px 50px;
+           }
+        }
+        .Find_Us{
+            align-items: center;
+            h3{
+                font-size: 30px;
+               }
+    
+        }
+    }
+
+}

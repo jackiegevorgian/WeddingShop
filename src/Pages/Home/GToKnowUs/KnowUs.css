@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.KnowUs_Elements{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0;
+    gap: 15px;
+
+}
+
+.KnowUsTheme_Box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 100px;
+
+    span{
+        font-size: 18px;
+        color: #555555;
+        font-weight: 600;
+    }
+    h1{
+        color: #333333;
+        font-weight: 400;
+        font-size: 40px;
+    }
+}
+
+.KnowUs_Cont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 50px;
+     
+
+    .KnowBox{
+        width: 600px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+        .KnowImg{
+            width: 300px;
+            height: 300px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: drop-shadow(0 10px 20px  rgba(0, 0, 0, 0.342));
+        }
+    }
+
+    .KnowInfo{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding:  40px;
+        gap: 10px;
+
+        div{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+ 
+
+        h2{
+            color: #333333;
+            font-weight: 400;
+            font-size: 30px;
+            transition: .5s;
+
+            &:hover{
+                color: #696767;
+            }
+        }
+        span{
+            font-size: 14px;
+            color: #555555;
+            font-weight: 600;
+            transition: .5s;
+
+            &:hover{
+                color: #333333;
+            }
+        }
+
+        p{
+            color: #696767;
+            font-size: 14px;
+            text-align: center;
+            letter-spacing: 1px;
+            font-weight: 400;
+            transition: .5s;
+
+            &:hover{
+                color: #333333;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .KnowUsTheme_Box{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .KnowUs_Cont{
+        flex-wrap: wrap;
+        .KnowBox{
+            width: 300px;
+        }
+    }
+}
+@media (min-width: 552px) and (max-width:768px){
+   
+    .KnowUsTheme_Box{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .KnowInfo{
+        h2{
+            font-size: 25px;
+
+        }
+    }
+    .KnowUs_Cont{
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+   .KnowBox{
+    .KnowImg{
+        width: 150px;
+        height: 150px;
+    }
+   }
+}
+@media (min-width:320px) and (max-width:552px){
+   
+    .KnowUsTheme_Box{
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 20px;
+        
+        span{
+            font-size: 15px;
+        }
+        h1{
+            font-size: 25px;
+        }
+    }
+    .KnowInfo{
+        h2{
+            font-size: 20px;
+
+        }
+        span{
+            font-size: 13px;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+    .KnowUs_Cont{
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+   .KnowBox{
+    .KnowImg{
+        width: 140px;
+        height: 140px;
+    }
+   }
+
+}

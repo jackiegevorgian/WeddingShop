@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.FeaturedSop_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 80px;
+    flex-direction: column;
+    gap: 100px;
+
+    .Title_Box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 10px;
+
+        &>div {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            &:nth-child(2) {
+                width: 570px;
+            }
+
+        }
+
+
+        h5 {
+            color: #A69494;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+        }
+
+        h1 {
+            color: #333333;
+            font-weight: 300;
+            font-size: 60px;
+        }
+
+        p {
+            color: #8b8383;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+}
+
+.FshProducts_Box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.Product {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    .FeatShop_Img {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        scale: 1.08;
+        transition: .4s;
+    }
+
+    &:hover .FeatShop_Info span {
+        left: -100%;
+    }
+
+    &:hover .FeatShop_Info button {
+        right: 0;
+    }
+
+    &:hover img {
+        scale: 1.2;
+    }
+
+    &:hover .FeatShop_Info h4 {
+        color: #3d3b3b;
+    }
+
+    .FeatShop_Info {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+
+
+        &>div {
+            width: 100%;
+            height: 45px;
+            /* background-color: red; */
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+
+            &:nth-child(2) {
+                width: 50%;
+                /* background-color: red; */
+            }
+
+            h4 {
+                color: #8b8383;
+
+
+            }
+
+            span {
+                color: #333333;
+                position: absolute;
+                left: 40%;
+                transition: .4s;
+            }
+
+            button {
+                width: 100%;
+                padding: 15px 10px;
+                color: #333333;
+                background-color: transparent;
+                border: none;
+                position: absolute;
+                right: -100%;
+                transition: .4s;
+                cursor: pointer;
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 95%;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: rgb(0, 0, 0);
+                    transition: .2s;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .FeaturedSop_Box {
+        padding: 100px 60px;
+
+        .Title_Box {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    }
+
+    .Product {
+        width: 200px;
+
+        .FeatShop_Img {
+            height: 200px;
+        }
+    }
+
+    .FshProducts_Box {
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 552px) and (max-width:768px) {
+    .FeaturedSop_Box {
+        padding: 100px 60px;
+
+        .Title_Box {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &>div {
+                &:nth-child(2) {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-size: 50px;
+                }
+
+                p {
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+
+    .Product {
+        width: 200px;
+
+        .FeatShop_Img {
+            height: 200px;
+        }
+
+        .FeatShop_Info {
+            &>div {
+                span {
+                    left: 25%;
+                }
+            }
+        }
+    }
+
+    .FshProducts_Box {
+        gap: 10px;
+    }
+
+}
+
+@media (min-width:320px) and (max-width:552px) {
+    .FeaturedSop_Box {
+        padding: 100px 0px;
+
+        .Title_Box {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &>div {
+                &:nth-child(2) {
+                    width: 100%;
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                h5 {
+                    font-size: 12px;
+                }
+
+                p {
+                    align-items: center;
+                    font-size: 11px;
+                }
+            }
+        }
+
+    }
+
+    .Product {
+        width: 150px;
+
+        .FeatShop_Img {
+            height: 150px;
+        }
+
+        .FeatShop_Info {
+            gap: 5px;
+
+            &>div {
+                height: 25px;
+
+                &:nth-child(2) {
+                    width: 100%;
+                }
+
+                span {
+                    left: 42%;
+                    font-size: 12px;
+                }
+
+                h4 {
+                    font-size: 12px;
+                }
+
+                button {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .FshProducts_Box {
+        gap: 10px;
+    }
+}

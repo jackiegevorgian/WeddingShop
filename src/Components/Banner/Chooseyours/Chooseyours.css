@@ -1,0 +1,263 @@
+.Service_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-direction: column;
+    padding: 100px 0;
+
+    .Service_Theme {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        gap: 15px;
+        /* background-color: green; */
+
+        &>div {
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            &:nth-child(2) {
+                width: 700px;
+                transform: translateY(45px);
+            }
+
+        }
+
+
+        h5 {
+            color: #A69494;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 300;
+        }
+
+        h1 {
+            color: #333333;
+            font-weight: 300;
+            font-size: 60px;
+        }
+
+        p {
+            color: #8b8383;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+
+    .Service_Box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .Service {
+            width: 350px;
+            height: auto;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* background-color: red; */
+            position: relative;
+            border-right: dashed 1px rgba(0, 0, 0, 0.322);
+            border-left: dashed 1px rgba(0, 0, 0, 0.322);
+            gap: 20px;
+
+
+        
+
+            &>span:first-child {
+                position: absolute;
+                top: 2px;
+                background-color: #F0F1F5;
+                right:10px;
+                padding: 5px;
+                font-weight: 600;
+                color: gray;
+                letter-spacing: 2px;
+                font-size: 13px;
+            }
+
+            h1{
+                font-size: 50px;
+                font-weight: 400;
+                color: #333333;
+            }
+            span{
+                color: #8b8383;
+                font-size: 13px;
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 35px;
+                list-style: none;
+
+                li {
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            button {
+                padding: 20px 30px;
+                border: none;
+                background-color: #000000;
+                color: white;
+                position: relative;
+                text-decoration: none;
+                cursor: pointer;
+                text-align: center;
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: #a69494dc;
+                    color: #000000;
+                    transition: .4s;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+
+        }
+
+    }
+
+}
+@media (min-width:768px) and (max-width:1024px){
+    .Service_Container{
+        .Service_Theme{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .Service_Box {
+            flex-wrap: wrap;
+            gap: 0;
+        }
+    }
+}
+@media (min-width: 552px) and (max-width:768px){
+    .Service_Container{
+        .Service_Theme{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            &>div{
+                &:nth-child(2){
+                    width: 100%;
+                }
+
+            }
+            h5{
+                font-size: 13px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            p{
+                font-size: 13px;
+                text-align: center;
+                
+            }
+        }
+        .Service_Box {
+            flex-wrap: wrap;
+            gap: 10px;
+            .Service{
+                width: 250px;
+                &>span:first-child{
+                    font-size: 10px;
+                }
+                
+                h1{
+                    font-size: 30px;
+                }
+                ul{
+                    li{
+                        font-size: 10px;
+                    }
+                }
+                button{
+                    padding: 8px 20px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:320px) and (max-width:552px){
+    .Service_Container{
+        .Service_Theme{
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            &>div{
+                &:nth-child(2){
+                    width: 100%;
+                }
+
+            }
+            h5{
+                font-size: 12px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 12px;
+                text-align: center;
+                
+            }
+        }
+        .Service_Box {
+            flex-wrap: wrap;
+            gap: 10px;
+            .Service{
+                width: 250px;
+                &>span:first-child{
+                    font-size: 10px;
+                }
+                
+                h1{
+                    font-size: 30px;
+                }
+                ul{
+                    li{
+                        font-size: 10px;
+                    }
+                }
+                button{
+                    padding: 8px 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}

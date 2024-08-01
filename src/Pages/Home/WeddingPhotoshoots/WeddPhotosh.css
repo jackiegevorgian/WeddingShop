@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.PhotoshootsBanner{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url(https://qi3.qodeinteractive.com/wp-content/uploads/2020/09/h1-img-6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    div{
+        width: 470px;
+        height: auto;
+        background-color: black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: start;
+        padding: 30px 20px;
+        gap: 10px;
+
+        div{
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 5px;
+            padding: 0;
+
+            h4{
+                color: #979696;
+                font-size: 13px;
+                font-weight: 400;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            h1{
+                color: #FEFEFE;
+                font-weight: 100;
+                font-size: 40px;
+            }
+            h5{
+                color: #979696;
+                font-weight: 400;
+                font-size: 12px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            &:nth-child(2){
+                width: 150px;
+                height: 130px;
+                gap: 25px;
+                padding-left: 10px;
+                border-left: dashed 1px white;
+                align-items: center;
+                justify-content: flex-start;
+
+                svg{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+   
+ 
+}
+
+a{
+    color:rgb(245, 242, 242);
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .PhotoshootsBanner{
+        height: 400px;
+        div{
+            width: 600px;
+            padding: 10px 20px;
+        }
+    }
+}
+@media (min-width: 552px) and (max-width:768px){
+    .PhotoshootsBanner{
+        height: 400px;
+        div{
+            width: 600px;
+            padding: 10px 20px;
+            div{
+                h1{
+                    font-size: 27px;
+                }
+                h4{
+                    font-size: 10px;
+                }
+                h5{
+                    font-size: 10px;
+                }
+             &:nth-child(2){
+                width: auto;
+                height: auto;
+                gap: 12px;
+                svg{
+                    font-size: 30px;
+                }
+                    
+                }
+            }
+        }
+    }
+}
+@media (min-width:320px) and (max-width:552px){
+    .PhotoshootsBanner{
+        height: 370px;
+        div{
+            width: 600px;
+            padding: 7px 17px;
+            div{
+                h1{
+                    font-size: 25px;
+                }
+                h4{
+                    font-size: 10px;
+                }
+                h5{
+                    font-size: 10px;
+                }
+             &:nth-child(2){
+                width: auto;
+                height: auto;
+                gap: 12px;
+                svg{
+                    font-size: 25px;
+                }
+                    
+                }
+            }
+        }
+    }
+}
